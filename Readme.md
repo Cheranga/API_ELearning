@@ -12,9 +12,9 @@ This application is based on this [Creating an ASP.NET Web API restful service](
 - [ ] Prepare for versioning
 - [ ] Caching
 - [ ] Additional
-   - Completely decouple dependencies through abstraction
-   - Secure the API through JWT
-   - Add caching with REDIS
+      - [ ] Completely decouple dependencies through abstraction
+      - [ ] Secure the API through JWT
+      - [ ] Add caching with REDIS
 	 	 
 
 ### Important Links
