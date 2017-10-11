@@ -63,6 +63,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Tutor.cs" />
+    <Compile Include="Repositories\ILearningRepository.cs" />
+    <Compile Include="Repositories\LearningRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
