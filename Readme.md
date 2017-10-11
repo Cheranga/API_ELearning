@@ -1,7 +1,7 @@
 This application is based on this [Creating an ASP.NET Web API restful service](http://bitoftech.net/2013/11/25/detailed-tutorial-building-asp-net-web-api-restful-service)
 
-### Tasks
-[x] Create the project, add a readme and push it to git hub.
+#Tasks
+[]Create the project, add a readme and push it to git hub.
 [] Create the repositories
 [] Create the Web API project
 [] Add DI, Autofac and configure formatters
