@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="DataContext\DataSeeder.cs" />
     <Compile Include="DataContext\LearningContext.cs" />
+    <Compile Include="DataContext\LearningContextMigration.cs" />
     <Compile Include="Models\Gender.cs" />
     <Compile Include="Mappings\CourseMappings.cs" />
     <Compile Include="Mappings\EnrollmentMappings.cs" />

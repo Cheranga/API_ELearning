@@ -1,6 +1,5 @@
 ﻿using System.Data.Entity;
 using System.Data.Entity.Core.Common.CommandTrees;
-using System.Data.Entity.Migrations;
 using Api_ELearning.DataAccess.Mappings;
 using Api_ELearning.DataAccess.Models;
 
@@ -34,20 +33,5 @@ namespace Api_ELearning.DataAccess.DataContext
         }
 
         
-    }
-
-    public class LearningContextMigration : DbMigrationsConfiguration<LearningContext>
-    {
-        public LearningContextMigration()
-        {
-            AutomaticMigrationsEnabled = true;
-            AutomaticMigrationDataLossAllowed = true;
-        }
-
-        protected override void Seed(LearningContext context)
-        {
-            var dataSeeder = new DataSeeder(context);
-            dataSeeder.Seed();
-        }
     }
 }

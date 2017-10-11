@@ -24,9 +24,9 @@ namespace Api_ELearning.DataAccess.Mappings
             // Description
             Property(x => x.Description).IsOptional().HasMaxLength(1000);
 
-            // Foriegn Keys
-            HasRequired(x => x.Subject).WithMany().Map(x => x.MapKey("SubjectId"));
-            HasRequired(x => x.Tutor).WithMany().Map(x => x.MapKey("TutorId"));
+            // Foreign Keys
+            HasRequired(x => x.Subject).WithMany(x=>x.Courses).WillCascadeOnDelete(false);
+            HasRequired(x => x.Tutor).WithMany(x=>x.Courses).WillCascadeOnDelete(false);
         }
     }
 }

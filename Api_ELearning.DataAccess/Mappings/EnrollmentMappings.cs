@@ -19,8 +19,8 @@ namespace Api_ELearning.DataAccess.Mappings
             Property(x => x.EnrolledDate).IsRequired().HasColumnType("smalldatetime");
 
             // Foreign Keys
-            HasOptional(x => x.Student).WithMany().Map(x => x.MapKey("StudentId")).WillCascadeOnDelete(false);
-            HasOptional(x => x.Course).WithMany().Map(x => x.MapKey("CourseId")).WillCascadeOnDelete(false);
+            HasRequired(x => x.Student).WithMany(x=>x.Enrollments);
+            HasRequired(x => x.Course).WithMany(x=>x.Enrollments);
         }
     }
 }

@@ -1,11 +1,19 @@
 ﻿using System;
 using System.Linq;
+using Api_ELearning.DataAccess.DataContext;
 using Api_ELearning.DataAccess.Models;
 
 namespace Api_ELearning.DataAccess.Repositories
 {
     public class LearningRepository : ILearningRepository
     {
+        private readonly LearningContext _context;
+
+        public LearningRepository(LearningContext context)
+        {
+            _context = context;
+        }
+
         public IQueryable<Subject> GetAllSubjects()
         {
             throw new NotImplementedException();
@@ -13,7 +21,7 @@ namespace Api_ELearning.DataAccess.Repositories
 
         public IQueryable<Course> GetAllCourses()
         {
-            throw new NotImplementedException();
+            return _context.Courses;
         }
 
         public IQueryable<Tutor> GetAllTutors()
@@ -38,7 +46,7 @@ namespace Api_ELearning.DataAccess.Repositories
 
         public Course GetCourse(int id)
         {
-            throw new NotImplementedException();
+            return _context.Courses.FirstOrDefault(x => x.Id == id);
         }
 
         public Tutor GetTutor(int id)

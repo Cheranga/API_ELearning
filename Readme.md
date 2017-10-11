@@ -12,8 +12,9 @@ This application is based on [Creating an ASP.NET Web API restful service](http:
 - [ ] Prepare for versioning
 - [ ] Caching
 - [ ] Additional
-   - [ ] Separate into multiple repositories.
    - [ ] Completely decouple dependencies through abstraction
+   - [ ] Remove EF reference in Web API
+   - [ ] Separate into multiple repositories.   
    - [ ] Secure the API through JWT
    - [ ] Add caching with REDIS
 	 	 
